@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Plant Me</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="header-left">
+        <a href="/" aria-label="Plant Me Homepage" class="logo-link">
+          <img src="img/Logo.png" alt="Plant Me logo" class="logo" />
+        </a>
+        <nav aria-label="Main Navigation">
+          <ul class="nav-links">
+            <li><a href="/about">About Us</a></li>
+            <li><a href="/contact">Contact Us</a></li>
+            <li><a href="/blog">Blog</a></li>
+            <li><a href="/sitemap">Site Map</a></li>
+          </ul>
+          <button
+            class="lang-switcher"
+            aria-label="Select language, current is English"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            Eng
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+        </nav>
+      </div>
+      <form class="search-form" role="search">
+        <label for="search-input" class="sr-only">Search this site</label>
+        <input
+          type="search"
+          id="search-input"
+          class="search-input"
+          placeholder="Search this site"
+        />
+        <button type="submit" class="search-button" aria-label="Search">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            aria-hidden="true"
+          >
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </button>
+      </form>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-heading">
+        <div class="hero-left">
+          <h1 id="hero-heading">Lorem ipsum dolor sit amet</h1>
+          <p class="hero-subheading">Lorem ipsum dolor sit amet</p>
+          <p class="hero-description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eleifend
+            tincidunt posuere eu risus cursus. Senectus sed maecenas viverra
+            tempus at. Nulla aliquam ac diam amet, sagittis, ut ultricies. Urna
+            hendrerit morbi sed gravida. Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit.
+          </p>
+          <button class="cta-button">Buy Now</button>
+        </div>
+        <img
+          src="img/hero.jpg"
+          alt="Close-up of lush, green Monstera plant leaves with water droplets"
+          class="hero-image"
+        />
+      </section>
+
+      <section class="info-section" aria-labelledby="info-section-heading">
+        <h2 id="info-section-heading" class="sr-only">Our Features</h2>
+        <article class="info-card" aria-labelledby="about-us-card-1">
+          <img
+            src="img/about-us-picture.jpg"
+            alt="Close-up of small, dark green leaves"
+            class="info-card-image"
+          />
+          <div class="info-card-content">
+            <h2 id="about-us-card-1" class="info-card-title">About Us</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eleifend
+              tincidunt posuere eu risus cursus. Senectus sed maecenas viverra
+              tempus at. Nulla aliquam ac diam amet, sagittis, ut ultricies.
+              Urna hendrerit morbi sed gravida. Lorem ipsum dolor sit amet,
+              consectetur adipiscing elit. Eleifend tincidunt posuere eu risus
+              cursus.
+            </p>
+            <a href="#" class="info-card-link">Learn more about →</a>
+          </div>
+        </article>
+
+        <article class="info-card" aria-labelledby="about-us-card-2">
+          <img
+            src="img/about-us-picture.jpg"
+            alt="Close-up of small, dark green leaves"
+            class="info-card-image"
+          />
+          <div class="info-card-content">
+            <h2 id="about-us-card-2" class="info-card-title">About Us 2</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eleifend
+              tincidunt posuere eu risus cursus. Senectus sed maecenas viverra
+              tempus at. Nulla aliquam ac diam amet, sagittis, ut ultricies.
+              Urna hendrerit morbi sed gravida. Lorem ipsum dolor sit amet,
+              consectetur adipiscing elit. Eleifend tincidunt posuere eu risus
+              cursus.
+            </p>
+            <a href="#" class="info-card-link">Learn more about →</a>
+          </div>
+        </article>
+      </section>
+
+      <section class="contact-section" aria-labelledby="contact-heading">
+        <div class="contact-card">
+          <div class="contact-info">
+            <h2 id="contact-heading">Contact Us</h2>
+            <p class="contact-subtitle">
+              Fill up the form and our team will get back to you within 24
+              hours. Happy to see your message!
+            </p>
+            <ul class="contact-details">
+              <li>
+                <img src="img/fb.png" alt="" aria-hidden="true" />
+                <span>+380 93 15 32 456</span>
+              </li>
+              <li>
+                <img src="img/fb.png" alt="" aria-hidden="true" />
+                <span>example@gmail.com</span>
+              </li>
+              <li>
+                <img src="img/fb.png" alt="" aria-hidden="true" />
+                <span>Pidmurma 5a, Lviv</span>
+              </li>
+            </ul>
+            <div class="contact-socials">
+              <a href="#" aria-label="Facebook"
+                ><img src="img/fb.png" alt=""
+              /></a>
+              <a href="#" aria-label="Facebook"
+                ><img src="img/fb.png" alt=""
+              /></a>
+              <a href="#" aria-label="Facebook"
+                ><img src="img/fb.png" alt=""
+              /></a>
+            </div>
+            <img
+              src="img/contact-leaf.png"
+              alt=""
+              class="contact-leaf-image"
+              aria-hidden="true"
+            />
+          </div>
+          <form class="contact-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="first-name"
+                  >First Name
+                  <span class="required" aria-hidden="true">*</span></label
+                >
+                <input
+                  type="text"
+                  id="first-name"
+                  name="first-name"
+                  required
+                  aria-required="true"
+                />
+              </div>
+              <div class="form-group">
+                <label for="last-name"
+                  >Last Name
+                  <span class="required" aria-hidden="true">*</span></label
+                >
+                <input
+                  type="text"
+                  id="last-name"
+                  name="last-name"
+                  required
+                  aria-required="true"
+                  value="Doe"
+                />
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  value="example@gmail.com"
+                />
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <div
+                  class="phone-input-container"
+                  role="group"
+                  aria-label="Phone number with country code"
+                >
+                  <div class="phone-prefix" aria-hidden="true">
+                    +380
+                    <svg
+                      width="12"
+                      height="8"
+                      viewBox="0 0 12 8"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M1 1.5L6 6.5L11 1.5"
+                        stroke="#666"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </div>
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    value="00 000 00 00"
+                  />
+                </div>
+              </div>
+            </div>
+            <fieldset class="form-group">
+              <legend>Select your role</legend>
+              <div class="radio-group">
+                <div class="radio-option">
+                  <input
+                    type="radio"
+                    id="role-ui"
+                    name="role"
+                    value="ui-developer"
+                    checked
+                  /><label for="role-ui">UI Developer</label>
+                </div>
+                <div class="radio-option">
+                  <input
+                    type="radio"
+                    id="role-ux"
+                    name="role"
+                    value="ux-designer"
+                  /><label for="role-ux">UI/UX Designer</label>
+                </div>
+                <div class="radio-option">
+                  <input
+                    type="radio"
+                    id="role-access"
+                    name="role"
+                    value="accessibility"
+                  /><label for="role-access">Accessibility Expert</label>
+                </div>
+                <div class="radio-option">
+                  <input
+                    type="radio"
+                    id="role-qa"
+                    name="role"
+                    value="qa"
+                  /><label for="role-qa">QA Engineer</label>
+                </div>
+                <div class="radio-option">
+                  <input
+                    type="radio"
+                    id="role-other"
+                    name="role"
+                    value="other"
+                  /><label for="role-other">Other</label>
+                </div>
+              </div>
+            </fieldset>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                placeholder="Text here..."
+              ></textarea>
+            </div>
+            <div class="form-group checkbox-container">
+              <div class="checkbox-option">
+                <input type="checkbox" id="terms1" name="terms1" /><label
+                  for="terms1"
+                  >Accept the Terms</label
+                >
+              </div>
+              <div class="checkbox-option">
+                <input
+                  type="checkbox"
+                  id="terms2"
+                  name="terms2"
+                  checked
+                /><label for="terms2">Accept the Terms 2</label>
+              </div>
+            </div>
+            <button type="submit" class="submit-button">Send Message</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-left">
+          <div class="footer-logo">
+            <p>PlantMe</p>
+          </div>
+          <div class="footer-subscribe">
+            <p>
+              Subscribe and be the first to know about our news and promotions.
+            </p>
+            <form class="subscribe-form">
+              <label for="subscribe-email" class="sr-only"
+                >Your Email Address</label
+              >
+              <input
+                type="email"
+                id="subscribe-email"
+                placeholder="example@gmail.com"
+                class="subscribe-input"
+                required
+                aria-required="true"
+              />
+              <button type="submit" class="subscribe-button">Subscribe</button>
+            </form>
+          </div>
+        </div>
+
+        <div class="footer-center">
+          <nav class="footer-nav" aria-label="Secondary Navigation">
+            <ul class="footer-links">
+              <li><a href="/about">About Us</a></li>
+              <li><a href="/contact">Contact Us</a></li>
+              <li><a href="/blog">Blog</a></li>
+              <li><a href="/sitemap">Site Map</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="footer-right">
+          <div class="footer-contact">
+            <p class="footer-heading">Contacts</p>
+            <p>+38 063 072 0121</p>
+            <p>plantme.store@gmail.com</p>
+          </div>
+          <div class="footer-payment" aria-label="Accepted payment methods">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Visa_Inc._logo.svg/200px-Visa_Inc._logo.svg.png"
+              alt="Visa"
+              class="payment-icon"
+            />
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Mastercard-logo.svg/200px-Mastercard-logo.svg.png"
+              alt="Mastercard"
+              class="payment-icon"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2022 PlantMe. All Rights Reserved</p>
+        <div class="footer-bottom-links">
+          <a href="/privacy">Privacy Policy</a>
+          <a href="/terms">Terms of service</a>
+          <a href="/language">Language</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
